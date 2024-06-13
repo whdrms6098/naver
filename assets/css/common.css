@@ -1,0 +1,96 @@
+#wrapper {
+    min-width: 1340px;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+#skipNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#skipNav a {
+    position: absolute;
+    white-space: nowrap;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    top: -50px;
+}
+
+#skipNav a:focus,
+#skipNav a:active {
+    top: 0;
+}
+
+.btn-keyboard::before,
+.btn-arrow::before,
+i[class*="ico-"]::before,
+i[class*="ico-"]::after,
+.util-area [class*="btn-"]::before,
+.ico-arrow::before,
+.news-group-control [class*="btn-"]::before,
+.news-view-control [class*="view"]::before,
+.shopping-group-control [class*="btn-"]::before,
+.feed-badge::before,
+.recommend-group-feed .btn-prev::before,
+.recommend-group-feed .btn-next::before,
+.sc-login .login-link::before,
+.weather-link::before,
+.btn-info::before,
+.btn-refresh::after,
+.ico-status,
+.stock-more-link::after,
+.ico-papago,
+.tool-item.papago .tool-item-body::before,
+.word-search::before,
+.ico-vibe,
+.ico-play::before,
+.m-link::after,
+.m-link span::before,
+.link-all::after,
+.btn-fn::before {
+    content: "";
+    display: block;
+    background: url("../images/sp-bg.png") no-repeat;
+    background-size: 451px 429px;
+}
+
+.shopping-menu i[class*="ico-"]::before {
+    content: "";
+    display: block;
+    background: url("../images/sp_main.png") no-repeat;
+    background-size: 159px 137px;
+}
+
+.content-frame {
+    background-color: #fff;
+    background-color: var(--color_block_bg);
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, .4);
+}
+
+.content-frame+.content-frame {
+    margin-top: 16px;
+}
+
+.btn-ad button {
+    background: url("../images/sp-btn.png") no-repeat;
+    background-size: 100px 90px;
+}
+
+.temp-img::before,
+.sc-weather .ico-weather::before {
+    content: "";
+    display: block;
+    background: url("../images/sp-weather.png") no-repeat;
+    background-size: 641px 587px;
+}
